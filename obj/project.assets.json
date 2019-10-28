@@ -4833,11 +4833,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fic\\Desktop\\api_tw\\api_tw.csproj",
+      "projectUniqueName": "C:\\Users\\fic\\Music\\api_tw\\api_tw.csproj",
       "projectName": "api_tw",
-      "projectPath": "C:\\Users\\fic\\Desktop\\api_tw\\api_tw.csproj",
+      "projectPath": "C:\\Users\\fic\\Music\\api_tw\\api_tw.csproj",
       "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fic\\Desktop\\api_tw\\obj\\",
+      "outputPath": "C:\\Users\\fic\\Music\\api_tw\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
