@@ -26,13 +26,9 @@ create table usuario(
 	nome_usuario varchar(50),
 	email varchar(100) unique,
 	senha varchar(100),
+	telefone_fixo varchar(20),
+	telefone_movel varchar(20),
 	id_tipo int foreign key references tipo_usuario(id_tipo)
-)
-
-create table telefone(
-	id_telefone int identity primary key not null,
-	telefone varchar(20),
-	id_usuario int foreign key references usuario(id_usuario)
 )
 
 create table endereco(
@@ -44,7 +40,20 @@ create table endereco(
 	estado varchar(50)
 );
 
-alter table usuario	add id_telefone int foreign key references telefone(id_telefone),id_endereco int foreign key references endereco(id_endereco);
+alter table usuario	add id_endereco int foreign key references endereco(id_endereco);
+
+create table usuario_externo(
+	id_usuario_exerno int identity primary key not null,
+	nome varchar(50),
+	rg varchar(20),
+	email varchar(100)
+);
+
+create table evento_usuario_externo(
+	id_usuario_exerno int foreign key references usuario_externo(id_usuario_exerno),
+	id_evento int foreign key references evento(id_evento)
+	
+);
 
 create table evento_usuario(
 	id_usuario int foreign key references usuario(id_usuario),
